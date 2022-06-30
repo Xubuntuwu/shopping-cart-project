@@ -84,6 +84,9 @@
         width: 95%;
         flex-direction: column;
     }
+    #container img{
+        width: 80%;
+    }
     #container #info{
         width: 100%;
     }
