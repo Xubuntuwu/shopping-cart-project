@@ -18,12 +18,12 @@ function App() {
     <div className="App">
       <Navbar cart={cart}/>
       <Routes>
-          <Route path="/" element={<Homepage/>}/>
-          <Route path="/homepage" element={<Homepage/>}/>
-          <Route path="/aboutpage" element={<Aboutpage/>}/>
-          <Route path="/shoppage" element={<Shop/>}/>
-          <Route path="/shoppage/:id" element={<ItemDetail cart={cart} setcart={changeCart}/>}/>
-          <Route path="/cart" element={<ShoppingCart cart={cart} setcart={changeCart}/>}/>
+          <Route path={process.env.PUBLIC_URL + '/'} element={<Homepage/>}/>
+          <Route path={process.env.PUBLIC_URL + "/homepage"} element={<Homepage/>}/>
+          <Route path={process.env.PUBLIC_URL + "/aboutpage"} element={<Aboutpage/>}/>
+          <Route path={process.env.PUBLIC_URL + "/shoppage"} element={<Shop/>}/>
+          <Route path={process.env.PUBLIC_URL + "/shoppage/:id"} element={<ItemDetail cart={cart} setcart={changeCart}/>}/>
+          <Route path={process.env.PUBLIC_URL + "/cart"} element={<ShoppingCart cart={cart} setcart={changeCart}/>}/>
       </Routes>
     </div>
   );
