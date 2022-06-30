@@ -1,5 +1,5 @@
 #shoppingcart{
-    height: calc(100vh - 60px);
+    min-height: calc(100vh - 60px);
     background-color: lightskyblue;
     padding: 20px;
     display: flex;
@@ -14,10 +14,13 @@
     grid-template-columns: 50% 40%;
     justify-content: space-between;
     grid-auto-rows: 20vh;
+    row-gap: 10px;
 }
 #shoppingcart .cart-product{
     width: 100%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    grid-column: 1/2;
+    border-radius: 10px;
     background-color: white;
     display: grid;
     grid-template-columns: 30% 70%;

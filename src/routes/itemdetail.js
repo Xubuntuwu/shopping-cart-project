@@ -3,18 +3,24 @@ import { useParams } from "react-router-dom";
 import './itemdetail.css';
 
 function ItemDetail(props){
-    // const [product, setProduct] = useState({image: '', title: '', description: '', price: '', rating: {rate: '', count: ''}});
     const [product, setProduct] = useState({});
     const id = useParams();
+    const saveddata = require('../assets/products.json');
+
 
     useEffect(()=>{
         productFetch();
     }, []);
 
-    const productFetch = async () =>{
-        const data = await fetch(`https://fakestoreapi.com/products/${id.id}`);
-        const product = await data.json();
-        console.log(product);
+    const correctproduct = (product) =>{
+        return product.id === Number(id.id);
+    }
+    const productFetch = () =>{
+        // const data = await fetch(`https://fakestoreapi.com/products/${id.id}`);
+        // const product = await data.json();
+        // console.log(product);
+        const productindex = saveddata.findIndex(correctproduct);
+        const product = saveddata[productindex];
         setProduct(product);
     }
     const addToCart = () =>{
@@ -38,7 +44,7 @@ function ItemDetail(props){
         
     <div id="productdetail">
         <main>
-            {product.rating ? <div id="container">
+            {product && product.rating ? <div id="container">
                 <img src={product.image} alt="product"/>
                 <div id="info">
                     <div id="productname">{product.title}</div>

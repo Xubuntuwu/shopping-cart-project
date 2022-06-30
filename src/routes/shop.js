@@ -3,16 +3,17 @@ import './shop.css';
 import { Link } from "react-router-dom";
 
 function Shop(props){
+    const data = require('../assets/products.json');
     const [products, setProducts] = useState([]);
     useEffect(()=>{
         productFetch();
     }, []);
 
-    const productFetch = async () =>{
-        const data = await fetch(
-            'https://fakestoreapi.com/products'
-            );
-        const products = await data.json();
+    const productFetch = () =>{
+        // const data = await fetch(
+        //     'https://fakestoreapi.com/products'
+        //     );
+        const products =  data;
         setProducts(products);
     }
 

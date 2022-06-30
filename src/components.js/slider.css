@@ -28,11 +28,12 @@ body, html{
 }
 
 .pictureframe{
+    background-color: black;
     overflow: hidden;
     border-radius: 10px;
     height: 100%;
     width: 70%;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 .wide{

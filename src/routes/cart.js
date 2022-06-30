@@ -5,12 +5,14 @@ function ShoppingCart(props){
     const [bcart, setbcart] = useState(0);
     const [subtotal, setsubtotal] = useState(0);
     const [delivery, setdelivery] = useState(0);
+
     
     useEffect(()=>{
         let amount = props.cart.reduce(
             (prev, cur) =>prev+cur.product.price*cur.quantity, 0
         )
-        setsubtotal(amount);
+        setsubtotal(Math.round((amount + Number.EPSILON) * 100) / 100
+        );
 
         if(amount>50){
             setdelivery(0);
