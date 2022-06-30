@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import './cart.css';
 
 function ShoppingCart(props){
-    const [bcart, setbcart] = useState(0); //using this to make sure changes are rendered
     const [subtotal, setsubtotal] = useState(0);
     const [delivery, setdelivery] = useState(0);
 
@@ -14,26 +13,25 @@ function ShoppingCart(props){
         setsubtotal(Math.round((amount + Number.EPSILON) * 100) / 100
         );
 
-        if(amount>50){
+        if(amount>50 || amount===0){
             setdelivery(0);
         }
         else{
             setdelivery(5);
         }
         props.setcart(props.cart);
-    }, [bcart, props.cart]);
+    }, [ props.cart]);
 
     const editCartUp = (id) =>{
-        let newcart = props.cart;
+        //HOLY FUCK BY NOT SLICING IT I WAS MUTATING THE ORIGINAL ARRAY THE ENTIRE TIME THATS WHY I T WASNT RE-RENDERING!!!
+        let newcart = props.cart.slice();
         const newquantity = newcart[id].quantity + 1;
-        console.log(newquantity);
         const product = newcart[id].product;
         newcart.splice(id, 1, {'product': product, quantity: newquantity});
         props.setcart(newcart);
-        setbcart(bcart+1);
     }
     const editCartDown = (id) =>{
-        let newcart = props.cart;
+        let newcart = props.cart.slice();
         const newquantity = newcart[id].quantity - 1;
         if(newquantity<=0){
             newcart.splice(id, 1);
@@ -43,12 +41,11 @@ function ShoppingCart(props){
             newcart.splice(id, 1, {'product': product, quantity: newquantity});
             props.setcart(newcart);
         }
-        setbcart(bcart-1);
     }
     const removeItem = (id) =>{
-        let newcart = props.cart;
+        let newcart = props.cart.slice();
         newcart.splice(id, 1);
-        setbcart(0);
+        props.setcart(newcart);
     }
     return(
         <div id="shoppingcart">

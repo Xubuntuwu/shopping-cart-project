@@ -32,7 +32,8 @@ function ItemDetail(props){
         }
         else{
             const id = props.cart.findIndex(element => element.product.id===product.id);
-            const newcart = props.cart;
+            //HOLY FUCK BY NOT SLICING IT I WAS MUTATING THE ORIGINAL ARRAY THE ENTIRE TIME THATS WHY I T WASNT RE-RENDERING!!!
+            const newcart = props.cart.slice();
             const oldquantity = newcart[id].quantity;
             newcart.splice(id, 1, {'product': product, quantity: oldquantity+1});
             props.setcart(newcart);
