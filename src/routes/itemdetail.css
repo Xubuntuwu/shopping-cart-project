@@ -26,6 +26,7 @@
 }
 #productdetail #container{
     height: 60%;
+    width: 60%;
     display: flex;
     align-items: center;
     gap: 5vw;
@@ -37,6 +38,7 @@
 }
 #container img{
     height: 90%;
+    width: 40%;
 }
 #container #info{
     height: 100%;
