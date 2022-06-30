@@ -12,8 +12,10 @@ function Navbar(props){
     }
 
     useEffect(()=>{
-        numberInCart()
-    }, [props.cart, items]);
+        //         props.setcart(props.cart);
+        // there should be a better way than just using an interval but i cant make anything else work
+       setInterval(numberInCart, 100);
+    }, []);
     
 
     return(
