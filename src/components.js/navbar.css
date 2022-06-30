@@ -41,3 +41,6 @@ nav img{
 Link{
     text-decoration: none;
 }
+#nav-cart{
+    font-weight: bold;
+}

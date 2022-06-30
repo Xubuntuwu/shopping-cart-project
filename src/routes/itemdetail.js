@@ -37,7 +37,6 @@ function ItemDetail(props){
             newcart.splice(id, 1, {'product': product, quantity: oldquantity+1});
             props.setcart(newcart);
         }
-        console.log(props.cart);
     }
 
     return(
