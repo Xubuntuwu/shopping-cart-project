@@ -5,17 +5,21 @@ import shoppingcart from '../assets/shoppingcart.svg';
 
 function Navbar(props){
     const [items, setitems] = useState(0);
+    const [bcart, setbcart] = useState([]);
 
     const numberInCart = () =>{
         let number = props.cart.reduce((prev, cur)=>{return prev + cur.quantity}, 0);
+        console.log(number);
         setitems(number);
     }
+    useEffect(()=>{
+        setInterval(numberInCart, 100);
+    }, []);
 
     useEffect(()=>{
-        //         props.setcart(props.cart);
-        // there should be a better way than just using an interval but i cant make anything else work
-       setInterval(numberInCart, 100);
-    }, []);
+        numberInCart();
+        setbcart(props.cart);
+    }, [props.cart, bcart]);
     
 
     return(

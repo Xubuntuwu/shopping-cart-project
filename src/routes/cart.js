@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import './cart.css';
 
 function ShoppingCart(props){
-    const [bcart, setbcart] = useState(0);
+    const [bcart, setbcart] = useState(0); //using this to make sure changes are rendered
     const [subtotal, setsubtotal] = useState(0);
     const [delivery, setdelivery] = useState(0);
 
@@ -20,6 +20,7 @@ function ShoppingCart(props){
         else{
             setdelivery(5);
         }
+        props.setcart(props.cart);
     }, [bcart, props.cart]);
 
     const editCartUp = (id) =>{
