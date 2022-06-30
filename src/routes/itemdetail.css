@@ -1,0 +1,88 @@
+/* <div id="productdetail">
+    <main>
+        <div id="container">
+            <img src={product.image} alt="product"/>
+            <div id="info">
+                <div id="productname">{product.title}</div>
+                <div id="productdescription">{product.description}</div>
+                <div id="productprice">${product.price}</div>
+                <div id="productrating">{product.rating.rate} ({product.rating.count})</div>
+                <button id="add">Add to bag</button>
+            </div>
+
+        </div>
+    </main>
+</div> */
+#productdetail{
+    height: calc(100vh - 60px);
+
+}
+#productdetail main{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#productdetail #container{
+    height: 60%;
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+    justify-content: center;
+    background-color: lightblue;
+    border-radius: 20px;
+    padding: 30px;
+
+}
+#container img{
+    height: 90%;
+}
+#container #info{
+    height: 100%;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#productname{
+    font-weight: bold;
+    font-size: large;
+}
+#productdescription{
+    font-style: italic;
+    color: rgb(71, 71, 71);
+}
+#productprice{
+    font-weight: bolder;
+    font-size: larger;
+    color: green;
+}
+#productrating{
+    font-weight: bold;
+}
+#productdetail button#add{
+    font-size: x-large;
+    font-weight: bold;
+    width: 70%;
+    color: white;
+    background-color: green;
+    border-radius: 10px;
+    border-style: none;
+    padding: 10px;
+}
+#productdetail button#add:hover{
+    background-color: darkgreen;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    #productdetail #container{
+        height: 90%;
+        width: 95%;
+        flex-direction: column;
+    }
+    #container #info{
+        width: 100%;
+    }
+}

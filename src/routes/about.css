@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Rock Salt';
+    src: url('../assets/fonts/RockSalt-Regular.woff2') format('woff2'),
+        url('../assets/fonts/RockSalt-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Walter Turncoat';
+    src: url('../assets/fonts/WalterTurncoat-Regular.woff2') format('woff2'),
+        url('../assets/fonts/WalterTurncoat-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+#aboutpage{
+    height: calc(100vh - 60px - 20px);
+    width: 100%;
+    background-color: whitesmoke;
+}
+#aboutpage main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#aboutpage main div{
+    height: 30%;
+    width: 30%;
+    font-size: x-large;
+    font-weight: bolder;
+    font-family: 'Walter Turncoat','Rock Salt', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+#aboutpage footer{
+    position: fixed;
+    height: 30px;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: gray;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

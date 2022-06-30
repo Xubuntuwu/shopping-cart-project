@@ -1,0 +1,39 @@
+/* #homepage{
+
+} */
+/* navbar top: 60px, navbar(header) 2: 40px, footer: 20px */
+
+#homepage header{
+    width: 100%;
+    background-color: black;
+    color: white;
+    border-top: 3px dashed white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    height: 40px;
+}
+
+#homepage main{
+    width: 100%;
+    height: calc(100vh - 120px);
+    background-color: rgb(228, 242, 255);
+    display: flex;
+    align-items: center;
+}
+
+#homepage footer{
+    position: fixed;
+    height: 30px;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: gray;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
