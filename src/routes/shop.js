@@ -22,7 +22,7 @@ function Shop(props){
             <main>
                 {products.map(function(product, index){
                     return(
-                        <Link to={`/shopping-cart-project/shoppage/${product.id}`} style={{textDecoration: 'inherit', color: 'inherit'}} key={product.id}>
+                        <Link to={`/shoppage/${product.id}`} style={{textDecoration: 'inherit', color: 'inherit'}} key={product.id}>
                         <div key={product.id} className="productcard">
                             <img src={product.image} alt="product"/>
                             <p>

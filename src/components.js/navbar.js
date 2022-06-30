@@ -20,10 +20,10 @@ function Navbar(props){
     <nav>
         <h3><Link to="/shopping-cart-project/" style={{textDecoration: 'inherit', color: 'inherit'}}><span>Logo</span></Link></h3>
         <ul>
-            <Link to="/shopping-cart-project/homepage" style={{textDecoration: 'inherit', color: 'inherit'}}><li>Home</li></Link>
-            <Link to="/shopping-cart-project/aboutpage" style={{textDecoration: 'inherit', color: 'inherit'}}><li>About</li></Link>
-            <Link to="/shopping-cart-project/shoppage" style={{textDecoration: 'inherit', color: 'inherit'}}><li>Shop</li></Link>
-            <Link to="/shopping-cart-project/cart" style={{textDecoration: 'inherit', color: 'inherit'}}><li id="nav-cart"><img src={shoppingcart} alt="shopcart"/>{items}</li></Link>
+            <Link to="/homepage" style={{textDecoration: 'inherit', color: 'inherit'}}><li>Home</li></Link>
+            <Link to="/aboutpage" style={{textDecoration: 'inherit', color: 'inherit'}}><li>About</li></Link>
+            <Link to="/shoppage" style={{textDecoration: 'inherit', color: 'inherit'}}><li>Shop</li></Link>
+            <Link to="/cart" style={{textDecoration: 'inherit', color: 'inherit'}}><li id="nav-cart"><img src={shoppingcart} alt="shopcart"/>{items}</li></Link>
         </ul>
     </nav>
     );

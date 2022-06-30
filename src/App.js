@@ -15,19 +15,17 @@ function App() {
   }
 
   return (
-    <BrowserRouter>
     <div className="App">
       <Navbar cart={cart}/>
       <Routes>
-          <Route path="/shopping-cart-project/" element={<Homepage/>}/>
-          <Route path="/shopping-cart-project/homepage" element={<Homepage/>}/>
-          <Route path="/shopping-cart-project/aboutpage" element={<Aboutpage/>}/>
-          <Route path="/shopping-cart-project/shoppage" element={<Shop/>}/>
-          <Route path="/shopping-cart-project/shoppage/:id" element={<ItemDetail cart={cart} setcart={changeCart}/>}/>
-          <Route path="/shopping-cart-project/cart" element={<ShoppingCart cart={cart} setcart={changeCart}/>}/>
+          <Route path="/" element={<Homepage/>}/>
+          <Route path="/homepage" element={<Homepage/>}/>
+          <Route path="/aboutpage" element={<Aboutpage/>}/>
+          <Route path="/shoppage" element={<Shop/>}/>
+          <Route path="/shoppage/:id" element={<ItemDetail cart={cart} setcart={changeCart}/>}/>
+          <Route path="/cart" element={<ShoppingCart cart={cart} setcart={changeCart}/>}/>
       </Routes>
     </div>
-    </BrowserRouter>
   );
 }
 
