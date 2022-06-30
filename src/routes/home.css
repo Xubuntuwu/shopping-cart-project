@@ -5,9 +5,9 @@
 
 #homepage header{
     width: 100%;
-    background-color: black;
+    background-color: rgb(46, 46, 46);
     color: white;
-    border-top: 3px dashed white;
+    /* border-top: 3px dashed white; */
     display: flex;
     text-align: center;
     justify-content: center;

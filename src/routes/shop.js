@@ -13,7 +13,6 @@ function Shop(props){
             'https://fakestoreapi.com/products'
             );
         const products = await data.json();
-        console.log(products);
         setProducts(products);
     }
 
@@ -22,7 +21,7 @@ function Shop(props){
             <main>
                 {products.map(function(product, index){
                     return(
-                        <Link to={`/shoppage/${product.id}`} style={{textDecoration: 'inherit', color: 'inherit'}}>
+                        <Link to={`/shoppage/${product.id}`} style={{textDecoration: 'inherit', color: 'inherit'}} key={product.id}>
                         <div key={product.id} className="productcard">
                             <img src={product.image} alt="product"/>
                             <p>

@@ -52,7 +52,7 @@ const automaticPlayer =() =>{
                         <div className="images" style={{backgroundImage:`url("https://source.unsplash.com/random/3000x2000/?men+fashion")`}}>Men's Wear</div>
                         <div className="images" style={{backgroundImage:`url("https://source.unsplash.com/random/3000x2000/?kids+fashion")`}}>Kid's Wear</div>
                         <div className="images" style={{backgroundImage:`url("https://source.unsplash.com/random/3000x2000/?jewelry")`}}>Jewelry</div>
-                        <div className="images" style={{backgroundImage:`url("https://source.unsplash.com/random/3000x2000/?tech")`}}>Tech</div>
+                        <div className="images" style={{backgroundImage:`url("https://source.unsplash.com/random/3000x2000/?tech+gadget")`}}>Tech</div>
                     </div>
                 </div>
             <div className="controls"><span id="left" className="arrow" onClick={moveSlideLeft}>&#10145;</span> <span id="circles"></span> <span id="right" className="arrow" onClick={moveSlideRight}>&#10145;</span></div>

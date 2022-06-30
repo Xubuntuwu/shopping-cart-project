@@ -12,7 +12,7 @@ function Navbar(props){
             <Link to="/homepage" style={{textDecoration: 'inherit', color: 'inherit'}}><li>Home</li></Link>
             <Link to="/aboutpage" style={{textDecoration: 'inherit', color: 'inherit'}}><li>About</li></Link>
             <Link to="/shoppage" style={{textDecoration: 'inherit', color: 'inherit'}}><li>Shop</li></Link>
-            <li><img src={shoppingcart} alt="shopcart"/></li>
+            <Link to="/cart" style={{textDecoration: 'inherit', color: 'inherit'}}><li><img src={shoppingcart} alt="shopcart"/></li></Link>
         </ul>
     </nav>
     );
