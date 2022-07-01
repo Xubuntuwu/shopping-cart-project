@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/shopping-cart-project/static/css/main.73602d02.css",
-    "main.js": "/shopping-cart-project/static/js/main.6f348e6e.js",
+    "main.css": "/shopping-cart-project/static/css/main.eee03f46.css",
+    "main.js": "/shopping-cart-project/static/js/main.3798f87d.js",
     "static/media/WalterTurncoat-Regular.woff": "/shopping-cart-project/static/media/WalterTurncoat-Regular.4f419593fd33543f7b57.woff",
     "static/media/RockSalt-Regular.woff": "/shopping-cart-project/static/media/RockSalt-Regular.cbb8678a4ad2c04e199f.woff",
     "static/media/WalterTurncoat-Regular.woff2": "/shopping-cart-project/static/media/WalterTurncoat-Regular.3f0c7154dd9364fa4813.woff2",
     "static/media/RockSalt-Regular.woff2": "/shopping-cart-project/static/media/RockSalt-Regular.277b272a3ac3d2f4faff.woff2",
+    "static/media/FakeStoreLogo.svg": "/shopping-cart-project/static/media/FakeStoreLogo.d115545f87745076ec7e9cf495f8e6a1.svg",
     "static/media/shoppingcart.svg": "/shopping-cart-project/static/media/shoppingcart.8b70f0673629a1f7c856a66cdb2cf6db.svg",
     "index.html": "/shopping-cart-project/index.html",
-    "main.73602d02.css.map": "/shopping-cart-project/static/css/main.73602d02.css.map",
-    "main.6f348e6e.js.map": "/shopping-cart-project/static/js/main.6f348e6e.js.map"
+    "main.eee03f46.css.map": "/shopping-cart-project/static/css/main.eee03f46.css.map",
+    "main.3798f87d.js.map": "/shopping-cart-project/static/js/main.3798f87d.js.map"
   },
   "entrypoints": [
-    "static/css/main.73602d02.css",
-    "static/js/main.6f348e6e.js"
+    "static/css/main.eee03f46.css",
+    "static/js/main.3798f87d.js"
   ]
 }
