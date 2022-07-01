@@ -77,6 +77,10 @@
     background-color: darkgreen;
     cursor: pointer;
 }
+#productdetail button#add:active{
+    background-color: white;
+    color: black;
+}
 
 @media only screen and (max-width: 600px) {
     #productdetail #container{
