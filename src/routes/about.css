@@ -51,3 +51,20 @@
     justify-content: center;
     align-items: center;
 }
+
+@media only screen and (max-width: 700px) {
+    #aboutpage{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #aboutpage main{
+        height: fit-content;
+    }
+    
+    #aboutpage main div{
+        width: 80%;
+
+    }
+}
