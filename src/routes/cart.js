@@ -72,7 +72,7 @@ function ShoppingCart(props){
                         <div id="name">Total</div>
                         <div id="subtotal">Sub-total: <span>${subtotal}</span></div>
                         <div id="delivery">* Delivery: ${delivery}</div>
-                        <div id="total">Total: <span>${subtotal + delivery}</span></div>
+                        <div id="total">Total: <span>${Math.round(((subtotal + delivery) + Number.EPSILON) * 100) / 100}</span></div>
                         <button type="button">Checkout</button>
                         <p>*No delivery fees with purchases over $50!</p>
                     </div>

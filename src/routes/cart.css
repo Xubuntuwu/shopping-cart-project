@@ -1,6 +1,6 @@
 #shoppingcart{
     min-height: calc(100vh - 60px);
-    background-color: lightskyblue;
+    background-color: whitesmoke;
     padding: 20px;
     display: flex;
     justify-content: center;

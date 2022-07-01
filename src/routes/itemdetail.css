@@ -31,9 +31,10 @@
     align-items: center;
     gap: 5vw;
     justify-content: center;
-    background-color: lightblue;
+    background-color: black;
     border-radius: 20px;
     padding: 30px;
+    color: white;
 
 }
 #container img{
@@ -53,7 +54,7 @@
 }
 #productdescription{
     font-style: italic;
-    color: rgb(71, 71, 71);
+    color: lightgray;
 }
 #productprice{
     font-weight: bolder;
@@ -67,19 +68,19 @@
     font-size: x-large;
     font-weight: bold;
     width: 70%;
-    color: white;
-    background-color: green;
+    color: black;
+    background-color: white;
     border-radius: 10px;
     border-style: none;
     padding: 10px;
 }
 #productdetail button#add:hover{
-    background-color: darkgreen;
+    background-color: darkgray;
     cursor: pointer;
 }
 #productdetail button#add:active{
-    background-color: white;
-    color: black;
+    background-color: gray;
+    color: white;
 }
 
 @media only screen and (max-width: 600px) {
