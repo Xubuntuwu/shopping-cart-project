@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/shopping-cart-project/static/css/main.eee03f46.css",
-    "main.js": "/shopping-cart-project/static/js/main.3798f87d.js",
+    "main.js": "/shopping-cart-project/static/js/main.fd986423.js",
     "static/media/WalterTurncoat-Regular.woff": "/shopping-cart-project/static/media/WalterTurncoat-Regular.4f419593fd33543f7b57.woff",
     "static/media/RockSalt-Regular.woff": "/shopping-cart-project/static/media/RockSalt-Regular.cbb8678a4ad2c04e199f.woff",
     "static/media/WalterTurncoat-Regular.woff2": "/shopping-cart-project/static/media/WalterTurncoat-Regular.3f0c7154dd9364fa4813.woff2",
@@ -10,10 +10,10 @@
     "static/media/shoppingcart.svg": "/shopping-cart-project/static/media/shoppingcart.8b70f0673629a1f7c856a66cdb2cf6db.svg",
     "index.html": "/shopping-cart-project/index.html",
     "main.eee03f46.css.map": "/shopping-cart-project/static/css/main.eee03f46.css.map",
-    "main.3798f87d.js.map": "/shopping-cart-project/static/js/main.3798f87d.js.map"
+    "main.fd986423.js.map": "/shopping-cart-project/static/js/main.fd986423.js.map"
   },
   "entrypoints": [
     "static/css/main.eee03f46.css",
-    "static/js/main.3798f87d.js"
+    "static/js/main.fd986423.js"
   ]
 }
