@@ -34,7 +34,10 @@ nav li:hover, nav h3 span:hover{
     cursor: pointer;
     font-weight: bold;
 }
-nav img{
+nav span>img{
+    max-height: 50px;
+}
+nav li img{
     filter: invert();
     max-height: 30px;
 }

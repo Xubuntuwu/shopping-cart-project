@@ -2,6 +2,7 @@ import React, { useEffect, useState} from "react";
 import {Link} from 'react-router-dom';
 import './navbar.css';
 import shoppingcart from '../assets/shoppingcart.svg';
+import logo from '../assets/FakeStoreLogo.svg';
 
 function Navbar(props){
     const [items, setitems] = useState(0);
@@ -18,7 +19,7 @@ function Navbar(props){
 
     return(
     <nav>
-        <h3><Link to="/shopping-cart-project/" style={{textDecoration: 'inherit', color: 'inherit'}}><span>Logo</span></Link></h3>
+        <h3><Link to="/shopping-cart-project/" style={{textDecoration: 'inherit', color: 'inherit'}}><span><img src={logo} alt="logo"/></span></Link></h3>
         <ul>
             <Link to="/homepage" style={{textDecoration: 'inherit', color: 'inherit'}}><li>Home</li></Link>
             <Link to="/aboutpage" style={{textDecoration: 'inherit', color: 'inherit'}}><li>About</li></Link>
