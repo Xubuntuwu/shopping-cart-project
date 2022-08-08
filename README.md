@@ -1,3 +1,3 @@
-# My version of the Shopping Cart Project on Odin Projects, check out my live github page to see the live result!
+# My fake store
 
 [Live Site](https://xubuntuwu.github.io/shopping-cart-project/)
